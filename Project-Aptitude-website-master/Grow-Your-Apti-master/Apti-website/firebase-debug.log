@@ -1,0 +1,32 @@
+[debug] [2018-08-14T13:36:58.880Z] ----------------------------------------------------------------------
+[debug] [2018-08-14T13:36:58.884Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bhavna\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only hosting
+[debug] [2018-08-14T13:36:58.885Z] CLI Version:   4.0.2
+[debug] [2018-08-14T13:36:58.885Z] Platform:      win32
+[debug] [2018-08-14T13:36:58.885Z] Node Version:  v10.7.0
+[debug] [2018-08-14T13:36:58.886Z] Time:          Tue Aug 14 2018 19:06:58 GMT+0530 (India Standard Time)
+[debug] [2018-08-14T13:36:58.886Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-14T13:36:58.905Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-14T13:36:58.907Z] > authorizing via signed-in user
+[debug] [2018-08-14T13:36:58.910Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/aptipediasite  
+  
+ Tue Aug 14 2018 19:06:58 GMT+0530 (India Standard Time)
+[debug] [2018-08-14T13:37:00.591Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T13:37:00.595Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/aptipediasite/tokens  
+  
+ Tue Aug 14 2018 19:07:00 GMT+0530 (India Standard Time)
+[debug] [2018-08-14T13:37:01.932Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-14T13:37:01.933Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/aptipediasite  
+  
+ Tue Aug 14 2018 19:07:01 GMT+0530 (India Standard Time)
+[debug] [2018-08-14T13:37:04.023Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\bhavna\Desktop\project-wepapps\New folder\Grow-Your-Apti-master\Apti-website'...
+[info] 
+[debug] [2018-08-14T13:37:04.031Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/509127944690/clients/_:getWebAppConfig  
+  
+ Tue Aug 14 2018 19:07:04 GMT+0530 (India Standard Time)
+[debug] [2018-08-14T13:37:05.132Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
