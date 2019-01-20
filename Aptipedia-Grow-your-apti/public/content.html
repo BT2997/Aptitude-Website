@@ -37,6 +37,13 @@
         //background-image: url(images/smoke.jpg);
         background-color: black;
       }
+
+       @media screen and (max-width: 800px) {
+       #sub1{
+         width: 50%;
+         height:auto;
+      }
+      
     </style>
   </head>
   <body>
@@ -59,12 +66,14 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row con">
           <!-- Title -->
-          <span class="mdl-layout-title"></span>
+          
+          <a class="mdl-navigation__link" href="intro.html" align="left"><span class="mdl-layout-title">HOME</span></a>
           <!-- Add spacer, to align navigation to the right -->
          <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <!--<nav class="mdl-navigation mdl-layout large-screen-only">-->
-            <button type="button" onclick="signo()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Sign Out <i class="material-icons" margin = "10px 0" >account_circle</i></button>
+
+            <button type="button" id="btn" onclick="signo()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">Sign Out <i class="material-icons" margin = "10px 0" >account_circle</i></button>
         </div>
       </header><br>
       <!--<div class="mdl-layout__drawer">
@@ -477,11 +486,12 @@
             	<td></td>
             </tr>
           </tbody>
+          
 
       </table>
       <!-- questions over-->
         <div class="conatiner" align="center">
-        <button type="button" id="sub1" onclick = "answer()" class="btn btn-dark" style="margin-left:720px; margin-top:50px; margin-bottom: 100px" >Submit</button>
+        <button type="button" id="sub1" onclick = "answer()" class="btn btn-large-dark" style="margin-left:50px; margin-top: 10px; display: none">Submit</button>
         </div>
     </div>
   </main>

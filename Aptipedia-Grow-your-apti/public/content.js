@@ -1,12 +1,14 @@
 function signo(){
   console.log("sign out");
   firebase.auth().signOut().then(function() {
-    window.location.href = "https://aptipediasite.firebaseapp.com/htmllogin.html";
+    window.alert("successfully logged out!!!!");
+    window.location.href = "https://aptipediasite.firebaseapp.com/intro.html";
     // Sign-out successful.
   }).catch(function(error) {
     window.alert("Error: "+error.message);
     // An error happened.
   });
+  //window.alert("successfully logged out!!!!");
 }
 var bankno;
 
@@ -19,6 +21,8 @@ function questionbank(w){
     var sb = "startbtn" + i;
     document.getElementById(sb).style.display = "none";
     document.getElementById(text).style.display = "block";
+    document.getElementById('sub1').style.display="block";
+    document.getElementById('carouselExampleControls').style.display = "none";
   }
   var fireref = firebase.database().ref(bankno);
   i = 0;
@@ -38,11 +42,15 @@ function questionbank(w){
         t_body.rows[3].cells[1].innerHTML = snap.child(childKey+"/Options/3").val();
       });
     });
-    document.getElementById('carouselExampleControls').style.display = "none";
+    //document.getElementById('carouselExampleControls').style.display = "none";
+
+
 
 }
+//document.getElementById('sub1').style.display = "block";
 
 document.getElementById('sub1').onclick = function answer(){
+
     var bankn = bankno;
     var i =1;
     var fireref = firebase.database().ref(bankn);
@@ -67,14 +75,14 @@ for(i=1;i<=10;i++){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
-    var displayName = user.displayName;
+    //var displayName = user.displayName;
     var email = user.email;
-    var emailVerified = user.emailVerified;
-    var photoURL = user.photoURL;
-    var isAnonymous = user.isAnonymous;
-    var uid = user.uid;
-    var providerData = user.providerData;
-    console.log(displayName+" "+email+" "+emailVerified+" "+photoURL+" "+isAnonymous+" "+uid+" "+providerData);
+    //var emailVerified = user.emailVerified;
+   // var photoURL = user.photoURL;
+    //var isAnonymous = user.isAnonymous;
+    //var uid = user.uid;
+    //var providerData = user.providerData;
+    console.log(email);
     // ...
   } else {
     window.alert("Error :"+ error.message);
